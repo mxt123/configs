@@ -1,0 +1,34 @@
+[user]
+	name = Matt Toseland	
+	lastname = =
+[gui]
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+	log = git log --pretty=format:\"%h - %an, %ar : %s\" --graph
+	lg = log -20--color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[merge]
+	tool = diffmerge
+[core]
+	autocrlf = true
+[mergetool "diffmerge"]
+  	cmd = 'D:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"	
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = 'D:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+[color "status"]
+	changed = cyan normal bold
+	untracked = cyan normal bold
+[color "diff"]
+	old = red normal bold
+	new = green normal bold
