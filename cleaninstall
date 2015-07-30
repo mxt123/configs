@@ -1,0 +1,36 @@
+configure ssd turn off hibernate and enable trim
+disable iwconfig power off
+	sudo iwconfig wlan0 power off
+set windows shift key and num pad behaviour
+
+forticlient
+
+thunderbird
+x remove libre-office*
+geany
+x eclipse-egit
+    -wtp
+    -wtp-erbtools
+chromium
+x sublime
+x node
+x npm
+x bower
+x docker
+google drive
+dropbox
+x git
+x git config
+x clone projects
+x gpodder
+banshee
+x httpserver
+apache
+tomcat
+x idler 2.7/3
+x wine
+samba shares
+x df
+minecraft
+steam
+zealdocs 
